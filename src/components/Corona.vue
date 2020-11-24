@@ -9,7 +9,7 @@
     export default {
         props:{
             title : String,
-            num: String,
+            num: Number,
             color: String,
         },
         methods: {
