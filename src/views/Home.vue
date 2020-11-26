@@ -34,6 +34,10 @@
           <corona-button class="w-40" title="코로나 발원지" @click.native="startedClicked()"/>
         </div>
       </div>
+      <span class="flex justify-center">
+        <img class="w-3/5 h-3/5" src="../assets/test2.jpg"/>
+      </span>
+      
     </div>
 </template>
 
