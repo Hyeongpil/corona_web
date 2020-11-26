@@ -56,7 +56,7 @@ import coronaButton from "../components/CoronaButton";
           }
         },
         created() {
-          let url = 'http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson?ServiceKey=RrZxeiFZR6vYN4nUi1mz8iCkNZZxEEyIECKuDw%2BbMh5W%2BZ4iUBxNCVTxDaynsHtPkiURin70NYx3kqCQgm2lPg%3D%3D';
+          let url = 'https://fcujvs7a5i.execute-api.us-east-2.amazonaws.com/test/get-corona?auth=corona';
           var axios = require('axios');
           axios({
             method: "GET",
@@ -69,7 +69,7 @@ import coronaButton from "../components/CoronaButton";
             endCreateDt: this.getFormatDate(new Date()),
           },
           }).then((res) => {
-            let item = res.data.response.body.items.item;
+            let item = res.data;
             this.clearCnt = item.clearCnt
             this.decideCnt = item.decideCnt
             this.deathCnt = item.deathCnt
